@@ -92,7 +92,7 @@ body{
 
 /***************************background color****************************/
 
-.bg-primary, .btn-primary{background-color: var(--color-primary);}
+.bg-primary, .btn-primary1{background-color: var(--color-primary);}
 .bg-secondery, .btn-secondery{background-color: var(--color-secondery);}
 .bg-success, .btn-secondery{background-color: var(--color-success);}
 .bg-info, .btn-info{background-color: var(--color-info);}

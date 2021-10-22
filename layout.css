@@ -150,3 +150,27 @@ nav div a:not(:first-child){margin-left: var(--distance-12);}
     background-image: url('../images/fun-facts/fun-facts-bg-img.jpg');
     background-repeat: no-repeat; background-size: cover; background-position: center;
 }
+
+/* extra stuff */
+.sfield {
+    width: 39%;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid grey;
+    float: center;
+    height: 33px;
+}
+.sfield-button {
+    width: 3.5rem;
+    padding: 10px;
+    background: var(--color-primary);
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+
+.mystore{
+    
+}

@@ -1,5 +1,6 @@
 /*colored bars*/
 .bar-height{ height: 0.3rem;}
+.bar-height-lg { height: 5rem;}
 
 /*width*/
 .max-width{max-width: 192rem;}
@@ -16,6 +17,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
 }
+.position-right {right: 10rem;}
 
 /*Margin*/
 .mr-auto, .mx-auto{margin-right: auto;}

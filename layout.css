@@ -209,3 +209,8 @@ border-bottom: 10px;}
   .max-content {
     min-width: max-content;
   }
+
+  .card-size {
+    max-height: auto;
+    width: auto;
+  }

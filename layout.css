@@ -214,3 +214,8 @@ border-bottom: 10px;}
     max-height: auto;
     width: auto;
   }
+  .img-auto {
+    width: 100px;
+    height: 100px;
+    object-fit: scale-down;
+  }

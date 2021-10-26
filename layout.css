@@ -25,6 +25,7 @@
 .mr-auto, .mx-auto{margin-right: auto;}
 .ml-auto, .mx-auto{margin-left: auto;}
 
+.m-2 {margin: var(--distance-2);}
 .m-6 {margin: var(--distance-6);}
 .m-15 {margin: var(--distance-15);}
 
@@ -93,6 +94,9 @@
 
 .pt-2, .py-2{padding-top: var(--distance-2);}
 .pb-2, .py-2{padding-bottom: var(--distance-2);}
+.pt-4, .py-4{padding-top: var(--distance-4);}
+.pb-4, .py-4{padding-bottom: var(--distance-4);}
+
 
 /* Typography */
 .text-decoration-none{text-decoration: none;}
@@ -200,4 +204,8 @@ border-bottom: 10px;}
 
 .custom-padding {
     padding: 0.5rem;
+  }
+
+  .max-content {
+    min-width: max-content;
   }

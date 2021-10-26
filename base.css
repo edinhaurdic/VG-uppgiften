@@ -21,7 +21,7 @@
     --display-md:1.8rem;
     --display-lg:2rem;
     --display-xl:2.5rem;
-    --display-xxl:3rem;
+    --display-xxl:4rem;
 
     /*Lineheight*/
     --line-height-sm:1rem;
@@ -121,6 +121,7 @@ body{
 .text-dark{color: var(--color-dark);}
 .text-white{color: var(--color-white);}
 .text-cozy{color: var(--color-cozy);}
+.text-blue { color: var(--color-blue);}
 /* .text-transparent{color: var(--color-transparent);}
 .text-border{color: var(--color-border);}
 .text-dark-transparent{color: var(--color-dark-transparent);} */

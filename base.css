@@ -5,13 +5,14 @@
     --color-info:#84bed6;
     --color-warning:#f0c24b;
     --color-danger:#ea7066;
-    --color-light:#f8f9fa;
+    --color-light:#d5dbe0;
     --color-dark:#343a40;
     --color-white:#fff;
     --color-cozy:#ea77ad;
     --color-transparent:transparent;
-    --color-border:#dee2e6;
+    --color-border:#494b4d;
     --color-dark-transparent: rgba(105, 105, 105, 0.233);
+    --color-blue: blue;
     
     /*Display*/
     --display-xxs:1rem;
@@ -26,6 +27,7 @@
     --line-height-sm:1rem;
     --line-height-md:1.6rem;
     --line-height-lg:3rem;
+    --line-height-xl:5rem;
 
     /*Distance*/
     --distance-0:0rem;
@@ -105,6 +107,7 @@ body{
 .bg-transparent, .btn-transparent{background-color: var(--color-transparent);}
 .bg-border, .btn-border{background-color: var(--color-border);}
 .bg-dark-transparent, .btn-dark-transparent{background-color: var(--color-dark-transparent);}
+.bg-blue { background-color: blue;}
 
 /*****************************Text color********************************/
 

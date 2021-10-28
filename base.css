@@ -12,7 +12,7 @@
     --color-transparent:transparent;
     --color-border:#494b4d;
     --color-dark-transparent: rgba(105, 105, 105, 0.233);
-    --color-blue: blue;
+    --color-blue: rgb(102, 174, 207);
     
     /*Display*/
     --display-xxs:1rem;
@@ -107,7 +107,7 @@ body{
 .bg-transparent, .btn-transparent{background-color: var(--color-transparent);}
 .bg-border, .btn-border{background-color: var(--color-border);}
 .bg-dark-transparent, .btn-dark-transparent{background-color: var(--color-dark-transparent);}
-.bg-blue { background-color: blue;}
+.bg-blue { background-color:var(--color-blue);}
 
 /*****************************Text color********************************/
 

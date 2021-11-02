@@ -14,21 +14,24 @@
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="flex.css">
     <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+      <link rel="" href="api.js">
+
 </head>
 <!-- Navigation grå -->
-<header>
-<div class="d-flex bg-primary bar-height-lg align-items-center">
-    <div class="dropdown dropdown-content-a">
-        <button class="dropbtn fas fa-user text-white bg-primary border-radius border-small-white p-4 ml-4 text-size-md">John
-            <i class="fa fa-caret-down"></i>
+<header class="sticky">
+<div class="d-flex text-sz-sm bg-primary bar-height-lg align-items-center p-4">
+    <div class=>
+        <button class="dropbtn fas fa-user john-xs john1 text-white john-sm bg-primary border-radius border-small-white p-4 ml-4 text-size-md">John
+            <i class=" john-sm fa fa-caret-down"></i>
         </button>    
     </div>
     <div class="d-flex flex-grow align-items-center justify-content-right text-size-sm mr-4">
         <i class="fas fa-phone-alt text-white ml-4"></i>
-        <span class="text-white ml-4 ">+00 123 123 123</span>
+        <span class="text-white text-hide ml-4 ">+00 123 123 123</span>
         <div class="d-flex  align-items-center  mb-2 ml-2 ">
             <i class="fas fa-envelope-open-text text-white ml-4 "></i>
-            <span class="text-white ml-4">info@mystore.com</span>
+            <span class="text-white text-hide ml-4">info@mystore.com</span>
         </div>
     </div>
 </div>
@@ -37,47 +40,77 @@
 
 
 <!-- Search bar -->
-<nav class="d-flex flex-grow bg-white border-bottom-dark p-4">
-        <div class="d-flex  align-items-center justify-content-center m-4 flex-wrap">
-            <i class="justify-content-center text-uppercase text-bold text-size-xl">My Store</i>
+<nav class="d-flex flex-grow bg-white border-bottom-dark p-4 max-size  text-hide">
+        <div class="d-flex  align-items-center justify-content-center m-4 wrap-sm">
+            <i class="justify-content-center text-uppercase text-bold text-size-xl distance-large active">My Store</i>
         </div>        
-        <div class="d-flex flex-grow align-items-center justify-content-center  pr-6 ">
+        <div class="d-flex flex-grow align-items-center justify-content-center  pr-6 shapes">
                 <i class="d-flex sfield-button fas fa-search  justify-content-center align-items-center text-size-lg border-dark ">
                 </i>
-                <input class="d-flex sfield align-items-center justify-content-center border-dark" placeholder="Search item..." >
+                <input class="d-flex sfield align-items-center justify-content-center border-dark wrap-sm" placeholder="Search item..." >
         </div>
         <!-- Meny knapparna -->
-        <div class="d-flex justify-content-between ml-4">
-            <a href="#" class="d-flex flex-column align-items-center text-decoration-none position-relative">
+<div class="dropdown">
+
+<!-- Meny knappen under 41em -->
+  <button class="dropbtn1">Meny</button>
+  <div class="dropdown-content">
+                <a href="#" class="d-flex flex-column align-items-center text-decoration-none position-relative">
                 <div class="d-flex align-items-center justify-content-center  border-radius p-4 ">
                     <i class="fa fa-heart text-dark lh-lg text-size-xxl m-2"></i>
                 </div>
-                <p class="text-size-xs text-dark display-flex align-items-center justify-content-center" > FAVORITES</p>
-                <span class="text-white bg-blue position-absolute icon-badge mt-2 lh-sm border-small-white text-size-xxs">2</span>
+                <p class="d-flex text-size-xs   text-dark align-items-center justify-content-center" > FAVORITES</p>
+                <span class=" text-white bg-blue position-absolute icon-badge mt-2 lh-sm border-small-white text-size-xxs">2</span>
             </a>
-         </div>
-         <div class="d-flex justify-content-between ml-4">
-            <a href="#" class="d-flex flex-column align-items-center text-decoration-none position-relative">
+                <a href="#" class="d-flex flex-column align-items-center text-decoration-none position-relative">
                 <div class="d-flex align-items-center justify-content-center  border-radius p-4 ">
-                    <i class="fa fa-shopping-cart text-dark lh-lg text-size-xxl m-2"></i>
+                    <i class="fa fa-shopping-cart  text-dark lh-lg text-size-xxl m-2"></i>
                 </div>
-                <p class="text-size-xs text-dark display-flex align-items-center justify-content-center" > $ 5154.60</p>
+                <p class="text-size-xs text-dark  align-items-center justify-content-center"  id="menu-p"> $ 5154.60</p>
                 <span class="text-white bg-blue position-absolute icon-badge mt-2 lh-sm border-small-white text-size-xxs">5</span>
             </a>
-         </div>        <div class="d-flex justify-content-between ml-4">
+                <a href="#" class="d-flex flex-column align-items-center text-decoration-none position-relative">
+                <div class="d-flex align-items-center justify-content-center  border-radius p-4 ">
+                    <i class="fa fa-file-invoice-dollar text-dark lh-lg text-size-xxl m-2"></i>
+                </div>
+                <p class="text-size-xs text-dark  align-items-center justify-content-center" id="menu-p"> $ 0.00</p>
+                <span class="text-white bg-blue position-absolute icon-badge mt-2 mr-4 lh-sm border-small-white text-size-xxs">0</span>
+            </a>
+  </div>
+</div>
+
+        <div class="d-flex justify-content-between ml-4 hide-menu ">
+            <a href="#" class="d-flex flex-column align-items-center text-decoration-none position-relative">
+                <div class="d-flex align-items-center justify-content-center  border-radius p-4 ">
+                    <i class="fa fa-heart shrink text-dark lh-lg text-size-xxl m-2"></i>
+                </div>
+                <p class="d-flex text-size-xs  text-hide-md text-dark align-items-center justify-content-center" > FAVORITES</p>
+                <span class=" text-white bg-blue position-absolute icon-badge mt-2 lh-sm border-small-white text-size-xxs">2</span>
+            </a>
+         </div>
+         <div class="d-flex justify-content-between ml-4 mt-main mt-main-sm hide-menu">
+            <a href="#" class="d-flex flex-column align-items-center text-decoration-none position-relative">
+                <div class="d-flex align-items-center justify-content-center  border-radius p-4 ">
+                    <i class="fa fa-shopping-cart  text-dark lh-lg text-size-xxl m-2"></i>
+                </div>
+                <p class="text-size-xs text-dark text-hide-md align-items-center justify-content-center"  id="menu-p"> $ 5154.60</p>
+                <span class="text-white bg-blue position-absolute icon-badge mt-2 lh-sm border-small-white text-size-xxs">5</span>
+            </a>
+         </div>        
+<div class="d-flex justify-content-between ml-4 mt-main  hide-menu">
             <a href="#" class="d-flex flex-column align-items-center text-decoration-none position-relative">
                 <div class="d-flex align-items-center justify-content-center  border-radius p-4 ">
                     <i class="fa fa-file-invoice-dollar text-dark lh-lg text-size-xxl m-2"></i>
                 </div>
-                <p class="text-size-xs text-dark display-flex align-items-center justify-content-center" > $ 0.00</p>
+                <p class="text-size-xs text-dark text-hide-md align-items-center justify-content-center" id="menu-p"> $ 0.00</p>
                 <span class="text-white bg-blue position-absolute icon-badge mt-2 mr-4 lh-sm border-small-white text-size-xxs">0</span>
             </a>
          </div>
  </nav>
 
  <!-- Aside menu -->
- <div class="d-flex">
-    <aside class="d-flex pr-4" >
+ <div class="d-flex open-menu">
+    <aside class="d-flex pr-4 " >
         <ul class="border-dark mt-6 ml-4 max-content pl-6 pr-4">
             <li class="border-bottom-dark px-4 py-4">
                 <a href="#" class="fas fa-hdd text-blue pr-2"></a>
@@ -128,40 +161,15 @@
 
         <!-- Main section -->
  <section>
-    <div class="d-flex flex-wrap justify-content-center align-items-center p-4">
+    <div class="d-flex flex-wrap justify-cards justify-content-center align-items-center p-4">
 
        <!-- Cards -->
-       <div class="d-flex border-dark m-4 align-items-center grow-card position-relative">
-           <div >
-               <p class="position-absolute discount text-size-xs text-white">20% Off</p>
-               <a href="#" class="text-dark far fa-heart pr-4  justify-content-center" id="card-icon" ></a>
-
-               <img src="Pics/iMac 18inch.png" class="img-auto" alt="Apple laptop 18inch" />
-
-               </div>
-               <div class="pl-4 flex-grow">
-                <div class="display-flex justify-content-between text-dark pt-4 ">
-                  <a href="#"><h4 class="text-dark">Apple Laptop 18inch</h4></a>
-
-
-                </div>
-                <p class="text-size-xs text-grey">Computers & Accessories</p>
-                <p class="text-size-xs pt-2 pb-2">$1999:99</p>
-                <p class="text-size-xs mr-auto pr-4 flex-wrap">
-                  The new Apple 18" <br />Best laptop money can buy according to some made up news magazine.
-                </p>
-                <div class="display-flex justify-content-between pt-4 pb-4">
-                  <a href="#"><i class="fas fa-cart-plus text-dark"></i></a>
-                  <p>2 <a href="#" class="far fa-star pr-4 text-dark"id="card-icon2" ></a></p>
-                </div>
-              </div>
-       </div>
        <div class="d-flex border-dark m-4 justify-content-center align-items-center mt-4 grow-card position-relative">
         <div >
             <p class="position-absolute discount text-size-xs">20% Off</p>
             <img src="Pics/iMac 18inch.png" class="img-auto" alt="Apple laptop 18inch" />
             </div>
-            <div class="pl-4 flex-grow">
+            <div class="pl-4 flex-grow grow-card">
              <div class="display-flex justify-content-between text-dark pt-4 ">
                <a href="#"><h4 class="text-dark">Apple Laptop 18inch</h4></a>
                <a href="#" class="text-dark far fa-heart pr-4 " id="card-icon" ></a>
@@ -179,10 +187,49 @@
     </div>
     <div class="d-flex border-dark m-4 justify-content-center align-items-center mt-4 grow-card position-relative">
         <div >
-            <p class="position-absolute discount text-size-xs">20% Off</p>
+            <img src="Pics/Asus laptop.png" class="img-auto" alt="Asus Laptop" />
+            </div>
+            <div class="pl-4 flex-grow grow-card">
+             <div class="display-flex justify-content-between text-dark pt-4 ">
+               <a href="#"><h4 class="text-dark">Asus Laptop</h4></a>
+               <a href="#" class="text-dark far fa-heart pr-4 " id="card-icon" ></a>
+             </div>
+             <p class="text-size-xs text-grey">Computers & Accessories</p>
+             <p class="text-size-xs pt-2 pb-2">$1599:99</p>
+             <p class="text-size-xs mr-auto pr-4 flex-wrap">
+               The new Asus Laptop <br />Best laptop money can buy according to some made up news magazine.
+             </p>
+             <div class="display-flex justify-content-between pt-4 pb-4">
+               <a href="#"><i class="fas fa-cart-plus text-dark"></i></a>
+               <p>2 <a href="#" class="far fa-star pr-4 text-dark"id="card-icon2" ></a></p>
+             </div>
+           </div>
+    </div>
+    <div class="d-flex border-dark m-4 justify-content-center align-items-center mt-4 grow-card position-relative">
+        <div >
+            <img src="Pics/Alienware mouse.png" class="img-auto" alt="Alienware mouse" />
+            </div>
+            <div class="pl-4 flex-grow grow-card">
+             <div class="display-flex justify-content-between text-dark pt-4 ">
+               <a href="#"><h4 class="text-dark">Alienware mouse</h4></a>
+               <a href="#" class="text-dark far fa-heart pr-4 " id="card-icon" ></a>
+             </div>
+             <p class="text-size-xs text-grey">Computers & Accessories</p>
+             <p class="text-size-xs pt-2 pb-2">$199:99</p>
+             <p class="text-size-xs mr-auto pr-4 flex-wrap">
+               Alienwre mouse <br />Cool looking mouse for the gamers.
+             </p>
+             <div class="display-flex justify-content-between pt-4 pb-4">
+               <a href="#"><i class="fas fa-cart-plus text-dark"></i></a>
+               <p>2 <a href="#" class="far fa-star pr-4 text-dark"id="card-icon2" ></a></p>
+             </div>
+           </div>
+    </div>
+    <div class="d-flex border-dark m-4 justify-content-center align-items-center mt-4 grow-card position-relative">
+        <div >
             <img src="Pics/iMac 18inch.png" class="img-auto" alt="Apple laptop 18inch" />
             </div>
-            <div class="pl-4 flex-grow">
+            <div class="pl-4 flex-grow grow-card">
              <div class="display-flex justify-content-between text-dark pt-4 ">
                <a href="#"><h4 class="text-dark">Apple Laptop 18inch</h4></a>
                <a href="#" class="text-dark far fa-heart pr-4 " id="card-icon" ></a>
@@ -200,39 +247,17 @@
     </div>
     <div class="d-flex border-dark m-4 justify-content-center align-items-center mt-4 grow-card position-relative">
         <div >
-            <p class="position-absolute discount text-size-xs">20% Off</p>
-            <img src="Pics/iMac 18inch.png" class="img-auto" alt="Apple laptop 18inch" />
+            <img src="Pics/Asus laptop.png" class="img-auto" alt="Asus Laptop" />
             </div>
-            <div class="pl-4 flex-grow">
+            <div class="pl-4 flex-grow grow-card">
              <div class="display-flex justify-content-between text-dark pt-4 ">
-               <a href="#"><h4 class="text-dark">Apple Laptop 18inch</h4></a>
+               <a href="#"><h4 class="text-dark">Asus Laptop</h4></a>
                <a href="#" class="text-dark far fa-heart pr-4 " id="card-icon" ></a>
              </div>
              <p class="text-size-xs text-grey">Computers & Accessories</p>
-             <p class="text-size-xs pt-2 pb-2">$1999:99</p>
+             <p class="text-size-xs pt-2 pb-2">$1599:99</p>
              <p class="text-size-xs mr-auto pr-4 flex-wrap">
-               The new Apple 18" <br />Best laptop money can buy according to some made up news magazine.
-             </p>
-             <div class="display-flex justify-content-between pt-4 pb-4">
-               <a href="#"><i class="fas fa-cart-plus text-dark"></i></a>
-               <p>2 <a href="#" class="far fa-star pr-4 text-dark"id="card-icon2" ></a></p>
-             </div>
-           </div>
-    </div>
-    <div class="d-flex border-dark m-4 justify-content-center align-items-center mt-4 grow-card position-relative">
-        <div >
-            <p class="position-absolute discount text-size-xs">20% Off</p>
-            <img src="Pics/iMac 18inch.png" class="img-auto" alt="Apple laptop 18inch" />
-            </div>
-            <div class="pl-4 flex-grow">
-             <div class="display-flex justify-content-between text-dark pt-4 ">
-               <a href="#"><h4 class="text-dark">Apple Laptop 18inch</h4></a>
-               <a href="#" class="text-dark far fa-heart pr-4 " id="card-icon" ></a>
-             </div>
-             <p class="text-size-xs text-grey">Computers & Accessories</p>
-             <p class="text-size-xs pt-2 pb-2">$1999:99</p>
-             <p class="text-size-xs mr-auto pr-4 flex-wrap">
-               The new Apple 18" <br />Best laptop money can buy according to some made up news magazine.
+               The new Asus Laptop <br />Best laptop money can buy according to some made up news magazine.
              </p>
              <div class="display-flex justify-content-between pt-4 pb-4">
                <a href="#"><i class="fas fa-cart-plus text-dark"></i></a>
